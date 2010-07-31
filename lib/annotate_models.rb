@@ -104,8 +104,6 @@ module AnnotateModels
       File.join(FIXTURES_DIR,       fixtures_name),           # fixture
       File.join(SPEC_MODEL_DIR,     "#{model_name}_spec.rb"), # spec
       File.join(SPEC_FIXTURES_DIR,  fixtures_name),           # spec fixture
-      File.join(Rails.root,         'test', 'factories.rb'),  # factories file
-      File.join(Rails.root,         'spec', 'factories.rb'),  # factories file
     ].each { |file| annotate_one_file(file, info) }
   end
 
